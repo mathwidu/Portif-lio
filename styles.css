@@ -77,19 +77,19 @@ body {
 }
 
 .home {
-  background-image: url('/assets /img/home.png');
+  background-image: url('/assets/img/home.png');
 }
 
 .mais-projetos {
-  background-image: url('/assets /img/projetos.png');
+  background-image: url('/assets/img/projetos.png');
 }
 
 .contato {
-  background-image: url('/assets /img/contato.png');
+  background-image: url('/assets/img/contato.png');
 }
 
 .sobre {
-  background-image: url('/assets /img/sobreMim.png');
+  background-image: url('/assets/img/sobreMim.png');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
