@@ -1,0 +1,420 @@
+/* ===================================================
+   RESET GERAL E CONFIGURAÇÕES BASE
+=================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  padding-top: 60px;
+}
+
+/* ===================================================
+   MENU FIXO NO TOPO
+=================================================== */
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.95);
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #00bfff;
+}
+
+/* ===================================================
+   SEÇÕES GERAIS E PARALLAX
+=================================================== */
+.secao {
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-margin-top: 60px;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.home {
+  background-image: url('/assets /img/home.png');
+}
+
+.mais-projetos {
+  background-image: url('/assets /img/projetos.png');
+}
+
+.contato {
+  background-image: url('/assets /img/contato.png');
+}
+
+.sobre {
+  background-image: url('/assets /img/sobreMim.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+}
+
+/* ===================================================
+   CONTAINER DE CONTEÚDO CENTRALIZADO
+=================================================== */
+.conteudo {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+/* ===================================================
+   CABEÇALHO / AVATAR / INTRODUÇÃO
+=================================================== */
+header {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 800px;
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 auto 40px;
+}
+
+/* ===================================================
+   GRID DE PROJETOS E CARDS
+=================================================== */
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card.destaque {
+  border: 2px solid #007BFF;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #00bfff;
+}
+
+/* Versão escura dos cards para seções específicas */
+.home .card,
+.mais-projetos .card {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+/* ===================================================
+   TAGS DE TECNOLOGIAS
+=================================================== */
+.tags {
+  margin-top: 10px;
+}
+
+.tags span {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 3px 8px;
+  margin-right: 5px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.home .tags span,
+.mais-projetos .tags span {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ===================================================
+   REDES SOCIAIS / ÍCONES
+=================================================== */
+.redes-sociais {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icone {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #fff;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.icone:hover {
+  transform: scale(1.2);
+  color: #00bfff;
+}
+
+/* ===================================================
+   SEÇÃO SOBRE MIM - TERMINAL + FOTO
+=================================================== */
+.sobre-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.sobre-layout .texto {
+  flex: 1 1 45%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  color: white;
+  transition: transform 0.3s;
+}
+
+.sobre-layout .texto:hover {
+  transform: translateY(-5px);
+}
+
+/* ===================================================
+   TYPING EFFECT (typewriter)
+=================================================== */
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid white;
+  white-space: nowrap;
+  margin: 0 auto 40px;
+  letter-spacing: .15em;
+  font-size: 2rem;
+  max-width: 100%;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+/* ===================================================
+   TERMINAL E FOTO POLAROID NA HOME
+=================================================== */
+.container-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.terminal-fake {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  color: #00ff88;
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+  width: 480px;
+  max-width: 85%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.terminal-header {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.terminal-header span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.terminal-header .red { background-color: #ff5f56; }
+.terminal-header .yellow { background-color: #ffbd2e; }
+.terminal-header .green { background-color: #27c93f; }
+
+.terminal-body {
+  white-space: pre-wrap;
+  font-size: 0.95rem;
+  min-height: 200px;
+}
+
+.foto-instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  max-width: 240px;
+}
+
+.insta-frame {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.insta-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.insta-user {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #eee;
+  font-style: italic;
+}
+
+
+
+/* ===================================================
+   MEDIA QUERY - MOBILE
+=================================================== */
+@media (max-width: 768px) {
+  .container-home {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ==============================================
+   TERMINAL - Animação de Boot
+================================================= */
+.terminal-fake {
+  position: relative; /* necessário para o boot overlay ficar dentro apenas do terminal */
+}
+
+.terminal-boot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  color: #00ff88;
+  font-family: monospace;
+  opacity: 1;
+  visibility: visible;
+  animation: fadeOut 0.1s ease-out forwards;
+  animation-delay: 2.5s;
+  pointer-events: none;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+.loading-line {
+  font-size: 1rem;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+.linha-terminal {
+  text-align: left;
+}
+.terminal-body {
+  white-space: pre-wrap;
+  font-size: 0.95rem;
+  min-height: 200px;
+  color: #00ff88; /* adicione essa linha se não estiver */
+  z-index: 1;
+  position: relative;
+}
+
+

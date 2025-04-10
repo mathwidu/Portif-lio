@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Matheus Duarte | Portfólio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+  <nav class="menu">
+    <ul>
+      <li><a href="#home">Início</a></li>
+      <li><a href="#sobre">Sobre Mim</a></li>
+      <li><a href="#mais-projetos">Mais Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="secao parallax home">
+    <div class="container-home">
+      <div class="terminal-fake">
+        <div class="terminal-boot" id="terminal-boot">
+          <p class="loading-line">Inicializando terminal<span class="dots">...</span></p>
+        </div>
+        <div class="terminal-header">
+          <span class="red"></span>
+          <span class="yellow"></span>
+          <span class="green"></span>
+        </div>
+        <div class="terminal-body" id="terminal-text">
+          <!-- Texto digitado via JS -->
+        </div>
+      </div>
+
+      <div class="foto-instagram" data-aos="fade-left">
+        <div class="insta-frame">
+          <img src="assets /img/meu-avatar.jpeg" alt="Matheus Duarte" />
+        </div>
+        <p class="insta-user">@matheusduarte</p>
+      </div>
+
+      <div class="grid-projetos">
+        <div class="card projeto" data-aos="zoom-in-up" data-aos-delay="200">
+          <h3>Projeto 1</h3>
+          <p>Descrição breve do projeto.</p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+          <a href="#">Ver mais</a>
+        </div>
+
+        <div class="card destaque projeto" data-aos="zoom-in-up" data-aos-delay="400">
+          <h3>Projeto Principal</h3>
+          <p>Projeto mais importante com mais detalhes.</p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>JavaScript</span>
+          </div>
+          <a href="#">Ver mais</a>
+        </div>
+
+        <div class="card projeto" data-aos="zoom-in-up" data-aos-delay="600">
+          <h3>Projeto 2</h3>
+          <p>Descrição breve do projeto.</p>
+          <div class="tags">
+            <span>Python</span>
+            <span>Flask</span>
+          </div>
+          <a href="#">Ver mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="secao parallax sobre">
+    <!-- Seção "Sobre Mim" permanece igual -->
+    <div class="conteudo">
+      <h2 class="typewriter">Sobre Mim</h2>
+      <div class="sobre-layout">
+        <div class="texto rellax" data-rellax-speed="-2" data-aos="fade-right">
+          <h3>Quem sou eu</h3>
+          <p>Me chamo Matheus Duarte, sou estudante de Ciência da Computação e apaixonado por desenvolvimento web. Busco criar experiências digitais modernas, criativas e funcionais.</p>
+        </div>
+        <div class="texto rellax" data-rellax-speed="2" data-aos="fade-left">
+          <h3>O que eu faço</h3>
+          <p>Trabalho com HTML, CSS, JavaScript e outras tecnologias para construir projetos responsivos e interativos. Estou sempre aprendendo novas ferramentas e tendências do mercado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mais-projetos" class="secao parallax mais-projetos">
+    <div class="conteudo" data-aos="fade-left">
+      <h2>Mais Projetos</h2>
+      <div class="grid-projetos">
+        <div class="card projeto" data-aos="zoom-in-up" data-aos-delay="200">
+          <h3>Projeto Extra 1</h3>
+          <p>Outro projeto interessante.</p>
+          <div class="tags">
+            <span>React</span>
+            <span>API</span>
+          </div>
+          <a href="#">Ver mais</a>
+        </div>
+
+        <div class="card projeto" data-aos="zoom-in-up" data-aos-delay="400">
+          <h3>Projeto Extra 2</h3>
+          <p>Mais um projeto bacana.</p>
+          <div class="tags">
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+          <a href="#">Ver mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="secao parallax contato">
+    <div class="conteudo" data-aos="fade-up">
+      <h2>Entre em Contato</h2>
+      <div class="redes-sociais">
+        <a href="https://github.com/Mathwidu" target="_blank" class="icone github"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/5551996103378" target="_blank" class="icone whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:matheuswmd@gmail.com" class="icone email"><i class="fas fa-envelope"></i></a>
+        <a href="https://instagram.com/matheuswmd" target="_blank" class="icone instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/rellax/rellax.min.js"></script>
+  <script>
+    new Rellax('.rellax');
+  </script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
