@@ -40,43 +40,43 @@
         </div>
         <p class="insta-user">@matheusduarte</p>
       </div>
+    </div>
 
-      <div class="grid-projetos">
-        <div class="card projeto" data-aos="zoom-in-up" data-aos-delay="200">
-          <h3>Projeto 1</h3>
-          <p>Descrição breve do projeto.</p>
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-          </div>
-          <a href="#">Ver mais</a>
+    <!-- Grade de projetos movida para fora do container-home -->
+    <div class="grid-projetos" style="margin-top: 40px;">
+      <div class="card projeto" data-aos="zoom-in-up" data-aos-delay="200">
+        <h3>Projeto 1</h3>
+        <p>Descrição breve do projeto.</p>
+        <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
         </div>
+        <a href="#">Ver mais</a>
+      </div>
 
-        <div class="card destaque projeto" data-aos="zoom-in-up" data-aos-delay="400">
-          <h3>Projeto Principal</h3>
-          <p>Projeto mais importante com mais detalhes.</p>
-          <div class="tags">
-            <span>HTML</span>
-            <span>JavaScript</span>
-          </div>
-          <a href="#">Ver mais</a>
+      <div class="card destaque projeto" data-aos="zoom-in-up" data-aos-delay="400">
+        <h3>Projeto Principal</h3>
+        <p>Projeto mais importante com mais detalhes.</p>
+        <div class="tags">
+          <span>HTML</span>
+          <span>JavaScript</span>
         </div>
+        <a href="#">Ver mais</a>
+      </div>
 
-        <div class="card projeto" data-aos="zoom-in-up" data-aos-delay="600">
-          <h3>Projeto 2</h3>
-          <p>Descrição breve do projeto.</p>
-          <div class="tags">
-            <span>Python</span>
-            <span>Flask</span>
-          </div>
-          <a href="#">Ver mais</a>
+      <div class="card projeto" data-aos="zoom-in-up" data-aos-delay="600">
+        <h3>Projeto 2</h3>
+        <p>Descrição breve do projeto.</p>
+        <div class="tags">
+          <span>Python</span>
+          <span>Flask</span>
         </div>
+        <a href="#">Ver mais</a>
       </div>
     </div>
   </section>
 
   <section id="sobre" class="secao parallax sobre">
-    <!-- Seção "Sobre Mim" permanece igual -->
     <div class="conteudo">
       <h2 class="typewriter">Sobre Mim</h2>
       <div class="sobre-layout">
@@ -133,13 +133,9 @@
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
   <script src="https://cdn.jsdelivr.net/npm/rellax/rellax.min.js"></script>
-  <script>
-    new Rellax('.rellax');
-  </script>
+  <script>new Rellax('.rellax');</script>
   <script src="/js/main.js"></script>
 </body>
 </html>
